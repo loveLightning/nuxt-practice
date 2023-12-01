@@ -1,0 +1,88 @@
+:root {
+    --dark-gray: #161b30; /* Тёмно-серый */
+    --dark-blue: #2a2f45; /* Тёмно-синий */
+    --light-gray: #8a91ab; /* Светло-серый */
+    --white: #fff; /* белый */
+    --gray: #5a607c; /* Cерый */
+    --deep-dark-blue: #292e44; /* Насыщенный темно-синий */
+    --dim-dark-blue: #30354B; /* тусклый-темно-синий */
+
+    --white-text-gradient: rgba(255, 255, 255, 0); /* Белый градиент для текста */
+
+    --SF-Pro-Display-Regular: 'SF-Pro-Display-Regular'; /* Regular */
+    --SF-Pro-Display-Medium: 'SF-Pro-Display-Medium'; /* Medium */
+    --SF-Pro-Display-Semibold: 'SF-Pro-Display-Semibold'; /* Semibold */
+    --SF-Pro-Display-Bold: 'SF-Pro-Display-Bold'; /* Bold */
+}
+
+@font-face {
+    font-family: var(--SF-Pro-Display-Regular);
+    src: url('~assets/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: var(--SF-Pro-Display-Medium);
+    src: url('~assets/fonts/SF-Pro-Display-Medium.otf') format('opentype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: var(--SF-Pro-Display-Semibold);
+    src: url('~assets/fonts/SF-Pro-Display-Bold.otf') format('opentype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: var(--SF-Pro-Display-Bold);
+    src: url('~assets/fonts/SF-Pro-Display-Semibold.otf') format('opentype');
+    font-style: bold;
+    font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--SF-Pro-Display-Regular);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--SF-Pro-Display-Medium);
+    font-size: 56px;
+    line-height: 110.7%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+}
